@@ -63,6 +63,7 @@
   width: auto;
   font-size: 2rem;
   padding: 1.5rem;
+  text-align: center;
 }
 #center-line {
     position: absolute;
