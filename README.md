@@ -1,2 +1,2 @@
 # PONG-GAME
-PONG ARCADE GAME USING JAVASCRIPT
+Pong arcade game using Javascript
