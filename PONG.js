@@ -22,9 +22,8 @@ var scoreRight = 0;
 // SETTING UP AUDIO
 //=================================================================
 
-
- function play() {
-   const audio = new Audio("https://github.com/camille-granier/pong-game/blob/main/paddle-clap.mp3?raw=true");
+ function play(sound) {
+   const audio = document.getElementById(sound)
    audio.currentTime = 0;
    audio.play()
  }
@@ -90,12 +89,12 @@ window.setInterval(function () {
   }
   if (ballTopPos <= 2 || ballTopPos >= 97) {
     ballSpeedTop = -ballSpeedTop;
-    play();
+    play('paddle-clap');
   }
   if (ballLeftPos <= borderLeft) {
     if ((ballTopPos + 13) > paddle1Pos && (ballTopPos + 7) < (paddle1Pos + paddleHeight)) {
       ballSpeedLeft = -ballSpeedLeft;
-      play();
+      play('paddle-clap');
     } else {
       scoreRight += 1;
       if (scoreRight == 5) {
@@ -111,7 +110,7 @@ window.setInterval(function () {
   if (ballLeftPos >= borderRight)  {
     if (paddle2Pos < ballTopPos + 13 && ballTopPos + 7 < (paddle2Pos + paddleHeight)) {
       ballSpeedLeft = -ballSpeedLeft;
-      play();
+      play('paddle-clap');
     } else {
       scoreLeft += 1;
       if (scoreLeft == 5) {
