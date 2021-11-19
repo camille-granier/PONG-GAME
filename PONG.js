@@ -89,7 +89,7 @@ window.setInterval(function () {
   }
   if (ballTopPos <= 2 || ballTopPos >= 97) {
     ballSpeedTop = -ballSpeedTop;
-    play('paddle-clap');
+    play('out-of-range');
   }
   if (ballLeftPos <= borderLeft) {
     if ((ballTopPos + 13) > paddle1Pos && (ballTopPos + 7) < (paddle1Pos + paddleHeight)) {
@@ -110,7 +110,7 @@ window.setInterval(function () {
   if (ballLeftPos >= borderRight)  {
     if (paddle2Pos < ballTopPos + 13 && ballTopPos + 7 < (paddle2Pos + paddleHeight)) {
       ballSpeedLeft = -ballSpeedLeft;
-      play('paddle-clap');
+      play('lost');
     } else {
       scoreLeft += 1;
       if (scoreLeft == 5) {
