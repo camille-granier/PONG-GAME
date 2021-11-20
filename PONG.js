@@ -124,9 +124,11 @@ window.setInterval(function () {
         document.getElementById('score-left').innerHTML = scoreLeft;
        play('new-start');
        startBall();
-      }
+      } else {
       document.getElementById('score-left').innerHTML = scoreLeft;
+       play('lost');
       startBall();
+      }
     }
   }
   paddle1.style.top = paddle1Pos + "%";
