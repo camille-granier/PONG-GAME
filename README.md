@@ -13,3 +13,5 @@ The left and right paddles are respectively by W and S, and left and up and down
 
 Each game last until one of the player reaches a score of 5. 
 After the score of 5 is reached the game restart with each player's score at 0.
+
+I added my own audio mp3 files created with LMMS.
