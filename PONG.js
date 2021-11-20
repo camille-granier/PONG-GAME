@@ -104,9 +104,11 @@ window.setInterval(function () {
         document.getElementById('score-left').innerHTML = scoreLeft;
        play('new-start')
        startBall();
-      }
+      } else {
       document.getElementById('score-right').innerHTML = scoreRight;
+       play('lost')
       startBall();
+      }
     }
   }
   if (ballLeftPos >= borderRight)  {
