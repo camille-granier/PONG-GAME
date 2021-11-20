@@ -122,6 +122,8 @@ window.setInterval(function () {
         scoreRight = 0;
         document.getElementById('score-right').innerHTML = scoreRight;
         document.getElementById('score-left').innerHTML = scoreLeft;
+       play('new-start');
+       startBall();
       }
       document.getElementById('score-left').innerHTML = scoreLeft;
       startBall();
